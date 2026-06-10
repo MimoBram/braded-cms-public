@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Sneaker Vault | Home</title>
+</head>
+<body class="bg-gray-100 p-6">
+    <nav class="bg-black text-white p-6 flex justify-between items-center rounded-lg shadow-lg mb-8">
+        <h1 class="text-3xl font-extrabold uppercase italic">Sneaker Vault</h1>
+        <ul class="flex gap-6 font-semibold">
+            <li class="hover:text-orange-400 cursor-pointer">Home</li>
+            <li class="hover:text-orange-400 cursor-pointer">Details</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flex gap-4 mb-10">
+            <input type="text" placeholder="Search your dream kicks..." 
+                class="w-full p-4 border-2 border-black rounded-lg shadow-md">
+            <select class="p-4 border-2 border-black rounded-lg bg-white font-bold">
+                <option>Filter Category</option>
+            </select>
+        </div>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-5 border-2 border-black rounded-xl shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:translate-y-[-5px] transition">
+                <img src="https://ik.imagekit.io/bramapi/ts1.jpg" alt="Sneaker" class="w-full h-64 object-cover rounded-md mb-4 border border-gray-200">
+                <h2 class="text-2xl font-bold mb-1">Travis Scott x AJ1</h2>
+                <p class="text-gray-600 mb-2 italic">Limited Edition</p>
+                <p class="text-xl font-black mb-4">Rp 25.000.000</p>
+                <a href="pages/detail.html" class="block text-center bg-black text-white py-2 rounded-md font-bold hover:bg-gray-800">View Detail</a>
+            </div>
+        </section>
+        <div class="mt-12 flex justify-center gap-4">
+            <button class="px-6 py-2 bg-gray-300 rounded-lg font-bold">Prev</button>
+            <span class="px-6 py-2 font-bold">Page 1</span>
+            <button class="px-6 py-2 bg-black text-white rounded-lg font-bold">Next</button>
+        </div>
+    </main>
+</body>
+</html>
