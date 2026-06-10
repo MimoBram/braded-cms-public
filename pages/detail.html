@@ -4,31 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Sneaker Vault | Product Detail</title>
+    <title>Detail | Sneaker Vault</title>
 </head>
-<body class="bg-gray-100 p-6">
-    <nav class="bg-black text-white p-6 flex justify-between items-center rounded-lg shadow-lg mb-8">
+<body class="bg-gray-100 min-h-screen p-6">
+    <nav class="bg-black text-white p-6 flex justify-between items-center shadow-lg mb-8">
         <h1 class="text-3xl font-extrabold uppercase italic">Sneaker Vault</h1>
         <ul class="flex gap-6 font-semibold">
-            <li><a href="index.html" class="hover:text-orange-400">Home</a></li>
-            <li><a href="pages/detail" class="hover:text-orange-400">Detail</a></li>
+            <li><a href="../index.html" class="hover:text-orange-400">Home</a></li>
         </ul>
     </nav>
-    <main class="max-w-4xl mx-auto bg-white p-8 rounded-xl border-2 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)]">
+    <main class="max-w-6xl mx-auto bg-white p-8 border-2 border-black rounded-xl shadow-[4px_4px_0px_rgba(0, 0, 0, 1)]">
         <div class="grid md:grid-cols-2 gap-8">
+            <img src="https://ik.imagekit.io/bramapi/ts1.jpg" alt="Sneakers" class="w-full rounded-lg border-2 border-black">
             <div>
-                <img src="https://ik.imagekit.io/bramapi/ts1.jpg" alt="Sneaker Detail" 
-                    class="w-full rounded-lg border-2 border-black">
-            </div>
-            <div class="flex flex-col justify-center">
-                <h2 class="text-4xl font-black mb-4">Travis Scott x AJ1</h2>
-                <p class="text-gray-600 mb-6 italic">Category: Limited Edition</p>
-                <p class="text-gray-800 mb-6 leading-relaxed">
-                    Deskripsi detail sepatu akan muncul di sini. Penjelasan mengenai material, 
-                    kenyamanan, dan latar belakang kolaborasi sepatu ini.
+                <h2 class="text-4xl font-black mb-2">Travis Scott x AJ1</h2>
+                <p class="text-gray-600 mb-4 italic text-xl">Limited Edition</p>
+                <p class="text-gray-800 leading-relaxed mb-6">
+                    Deskripsi lengkap mengenai produk ini akan ditampilkan di sini. Material premium, desain eksklusif, dan kenyamanan maksimal.
                 </p>
-                <p class="text-3xl font-black mb-8">Rp 25.000.000</p>
-                <a href="../index.html" class="inline-block bg-gray-200 text-black px-6 py-3 rounded-md font-bold text-center border-2 border-black">Back to Collection</a>
+                <p class="text-3xl font-black mb-2">Rp. 25.000.000</p>
+                <a href="../index.html" class="block text-center bg-gray-200 border-2 border-black py-3 rounded-lg font-bold">Back to Home</a>
             </div>
         </div>
     </main>
