@@ -4,36 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Detail Product | Sneaker Vault</title>
+    <title>SNEAKER VAULT | DETAIL</title>
 </head>
-<body class="bg-gray-100 min-h-screen">
-    <nav class="bg-black text-white p-6 flex justify-between items-center shadow-lg">
-        <h1 class="text-3xl font-extrabold uppercase italic">Sneaker Vault</h1>
-        <ul class="flex gap-6 font-semibold">
-            <li><a href="../index.html" class="hover:text-orange-400">Home</a></li>
-        </ul>
+<body class="bg-white text-black p-6 font-sans">
+    <nav class="flex justify-between items-center py-6 border-b-4 border-black mb-12">
+        <h1 class="text-4xl font-black italic tracking-tighter">SNEAKER VAULT</h1>
+        <a href="../index.html" class="font-bold text-lg hover:underline">← BACK</a>
     </nav>
-    <main class="max-w-4xl mx-auto p-6 mt-10">
-        <div class="bg-white p-8 border-2 border-black rounded-xl shadow-[6px_6px_0px_rgba(0,0,0,1)] grid md:grid-cols-2 gap-8">
-            <div>
-                <img src="https://ik.imagekit.io/bramapi/ts1.jpg" alt="Sneaker Detail" 
-                    class="w-full rounded-lg border-2 border-black shadow-md">
+    <main class="max-w-5xl mx-auto border-2 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="border-2 border-black p-2">
+                <div class="w-full h-96 bg-gray-200 border-2 border-black flex items-center justify-center font-bold">IMAGE DETAIL</div>
             </div>
             <div class="flex flex-col justify-center">
-                <h2 class="text-4xl font-black mb-4">Travis Scott x AJ1</h2>
-                <div class="mb-4">
-                    <span class="bg-orange-400 px-3 py-1 rounded-md font-bold text-sm">Limited</span>
-                </div>
-                <p class="text-gray-700 leading-relaxed mb-6">
-                    Deskripsi detail produk akan muncul di sini. Informasi mendalam mengenai material, 
-                    teknologi bantalan, dan latar belakang desain sepatu ini untuk memberikan 
-                    pengalaman informasi terbaik bagi calon pembeli.
-                </p>
-                <p class="text-3xl font-black mb-8">Rp 25.000.000</p>
-                
-                <a href="../index.html" class="text-center bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition">
-                    Back to Home
-                </a>
+                <span class="text-sm font-bold border-2 border-black inline-block px-3 py-1 mb-4">LIMITED EDITION</span>
+                <h2 class="text-5xl font-black uppercase mb-6 tracking-tighter">Travis Scott AJ1</h2>
+                <p class="text-lg font-bold opacity-80 mb-8">Deskripsi premium untuk sepatu eksklusif ini. Dibuat dengan material pilihan yang memberikan kenyamanan maksimal dan tampilan yang tak tertandingi.</p>
+                <p class="text-4xl font-black mb-8">Rp 25.000.000</p>
+                <button class="w-full bg-black text-white py-4 font-black text-lg border-2 border-black hover:bg-white hover:text-black transition-all"><a href="../index.html">BACK TO HOME</a></button>
             </div>
         </div>
     </main>

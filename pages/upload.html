@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>SNEAKER VAULT | UPLOAD IMAGE</title>
+</head>
+<body class="bg-white text-black flex min-h-screen font-sans">
+    <aside class="w-64 border-r-4 border-black flex flex-col p-6 shrink-0">
+        <div class="mb-12">
+            <h1 class="text-2xl font-black italic tracking-tighter">SV ADMIN</h1>
+            <p class="text-[10px] font-bold opacity-50 tracking-widest uppercase mt-1">MANAGEMENT PANEL</p>
+        </div>
+        <nav class="flex-grow">
+            <ul class="space-y-4 font-black text-sm tracking-wider">
+                <li>
+                    <a href="list.html" class="block p-3 border-2 border-black bg-black text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] uppercase">
+                        PRODUCTS
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html" class="block p-3 border-2 border-black hover:bg-black hover:text-white transition-all uppercase">
+                        CATEGORIES
+                    </a>
+                </li>
+                <li>
+                    <a href="add-staff.html" class="block p-3 border-2 border-black hover:bg-black hover:text-white transition-all uppercase">
+                        ADD STAFF
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-auto border-t-2 border-black pt-4">
+            <a href="login.html" class="block font-black text-sm tracking-wider text-red-600 hover:underline uppercase">
+                LOGOUT →
+            </a>
+        </div>
+    </aside>
+    <main class="flex-grow p-10">
+        <header class="mb-12">
+            <h2 class="text-4xl font-black uppercase tracking-tighter">CHANGE IMAGE</h2>
+            <p class="text-sm font-bold opacity-60 uppercase mt-1">UPDATE IMAGE FOR EXISTING ENTITY</p>
+        </header>
+        <section class="max-w-xl border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] bg-white">
+            <form action="list.html">
+                <div class="mb-6">
+                    <label class="block font-black text-xs uppercase mb-1 tracking-widest opacity-50">CURRENT PRODUCT</label>
+                    <h3 class="text-2xl font-black uppercase tracking-tight">Travis Scott AJ1</h3>
+                    <p class="text-xs font-bold opacity-40">ID: SNEAKER-001</p>
+                </div>
+                <div class="mb-6">
+                    <label class="block font-black text-xs uppercase mb-2 tracking-widest">CURRENT IMAGE</label>
+                    <div class="w-full h-48 bg-gray-200 border-2 border-black flex items-center justify-center font-bold text-sm uppercase">
+                        [ PREVIEW CURRENT IMAGE PLACEHOLDER ]
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <label class="block font-black text-xs uppercase mb-2 tracking-widest">SELECT NEW IMAGE FILE</label>
+                    <input type="file" accept="image/*" required
+                        class="w-full p-3 border-2 border-black font-bold file:mr-4 file:py-2 file:px-4 file:border-2 file:border-black file:bg-black file:text-white file:font-black file:text-xs file:uppercase cursor-pointer">
+                    <p class="text-[11px] text-gray-500 font-bold mt-1 italic">*Select a valid image file to patch the imgUrl field.</p>
+                </div>
+                <div class="flex gap-4 pt-2">
+                    <button type="submit" 
+                        class="flex-grow bg-black text-white py-4 font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all uppercase cursor-pointer">
+                        UPLOAD & UPDATE
+                    </button>
+                    <a href="list.html" 
+                        class="px-8 py-4 border-2 border-black font-black hover:bg-gray-100 transition-all text-center uppercase">
+                        CANCEL
+                    </a>
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>SNEAKER VAULT | CMS PRODUCTS</title>
+</head>
+<body class="bg-white text-black flex min-h-screen font-sans">
+    <aside class="w-64 border-r-4 border-black flex flex-col p-6 shrink-0">
+        <div class="mb-12">
+            <h1 class="text-2xl font-black italic tracking-tighter">SV ADMIN</h1>
+            <p class="text-[10px] font-bold opacity-50 tracking-widest uppercase mt-1">MANAGEMENT PANEL</p>
+        </div>
+        <nav class="flex-grow">
+            <ul class="space-y-4 font-black text-sm tracking-wider">
+                <li>
+                    <a href="list.html" class="block p-3 border-2 border-black bg-black text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] uppercase">
+                        PRODUCTS
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html" class="block p-3 border-2 border-black hover:bg-black hover:text-white transition-all uppercase">
+                        CATEGORIES
+                    </a>
+                </li>
+                <li>
+                    <a href="add-staff.html" class="block p-3 border-2 border-black hover:bg-black hover:text-white transition-all uppercase">
+                        ADD STAFF
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-auto border-t-2 border-black pt-4">
+            <a href="login.html" class="block font-black text-sm tracking-wider text-red-600 hover:underline uppercase">
+                LOGOUT →
+            </a>
+        </div>
+    </aside>
+    <main class="flex-grow p-10">
+        <header class="flex justify-between items-center mb-12">
+            <div>
+                <h2 class="text-4xl font-black uppercase tracking-tighter">PRODUCT LIST</h2>
+                <p class="text-sm font-bold opacity-60 uppercase mt-1">MANAGE SYSTEM INVENTORY</p>
+            </div>
+            <a href="form.html" class="bg-black text-white px-6 py-3 font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all uppercase">
+                + ADD PRODUCT
+            </a>
+        </header>
+        <div class="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-black text-white border-b-2 border-black font-black text-sm tracking-wider uppercase">
+                        <th class="p-4">PRODUCT INFO</th>
+                        <th class="p-4">CATEGORY</th>
+                        <th class="p-4">PRICE</th>
+                        <th class="p-4 text-center">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y-2 divide-black font-bold text-sm">
+                    <tr class="hover:bg-gray-50 transition-all">
+                        <td class="p-4 flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-200 border-2 border-black flex items-center justify-center font-black text-[10px]">IMG</div>
+                            <div>
+                                <p class="font-black uppercase text-base">Travis Scott AJ1</p>
+                                <p class="text-xs opacity-50">ID: SNEAKER-001</p>
+                            </div>
+                        </td>
+                        <td class="p-4 uppercase">LIMITED EDITION</td>
+                        <td class="p-4">Rp 25.000.000</td>
+                        <td class="p-4">
+                            <div class="flex justify-center gap-3">
+                                <a href="form.html" class="px-3 py-1 border-2 border-black bg-white font-black hover:bg-black hover:text-white transition-all text-xs uppercase">
+                                    EDIT
+                                </a>
+                                <a href="upload.html" class="px-3 py-1 border-2 border-black bg-white font-black hover:bg-black hover:text-white transition-all text-xs uppercase">
+                                    IMAGE
+                                </a>
+                                <button class="px-3 py-1 border-2 border-black bg-white font-black text-red-600 hover:bg-red-600 hover:text-white transition-all text-xs uppercase cursor-pointer">
+                                    DELETE
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
