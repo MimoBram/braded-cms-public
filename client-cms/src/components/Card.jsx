@@ -107,7 +107,7 @@ function Card({ product, onDelete, onRefresh }) {
         </div>
         <div className="mb-4 w-full">
           <h4 className="text-lg font-black uppercase truncate mb-1">{product.name}</h4>
-          <p className="text-xs text-gray-500 line-clamp-2 min-h-[2rem] leading-relaxed">{product.description}</p>
+          <p className="text-xs text-gray-500 line-clamp-2 min-h-8 leading-relaxed">{product.description}</p>
           <div className="border-t-2 border-dashed border-black my-3"></div>
           <div className="flex justify-between items-center w-full">
             <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Price</span>
